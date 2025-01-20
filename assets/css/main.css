@@ -1,0 +1,94 @@
+body {
+    font-family: 'YekanBakh';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #d4c2ff57;
+}
+
+#map {
+    width: 400px; /* Fixed width */
+    height: 400px; /* Fixed height (same as width for a square) */
+    border: 5px solid #e9e4f4;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#table-container {
+    min-width: 400px; /* Set a minimum width */
+    width: auto; /* Allow table to expand */
+    max-width: 600px; /* Set a maximum width */
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+
+    border: 1px solid #f4f4f4;
+    padding: 8px;
+    text-align: center;
+    color: rgb(77, 18, 60);
+}
+
+th {
+
+    background-color: #D4C2FF;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.operate {
+    background-color: #d4c2ff78;
+}
+
+.empty-message {
+    text-align: center;
+    font-weight: 400;
+    color: #976aff;
+}
+
+.empty-message img {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.action-icon {
+    margin: 0 5px;
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 20vh;
+    }
+  }
