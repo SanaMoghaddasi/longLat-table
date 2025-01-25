@@ -16,20 +16,29 @@
             <table id="coordinates-table">
                 <thead>
                     <tr>
+                        <th><input type="checkbox" id="select-all"></th>
                         <th>عرض جغرافیایی</th>
                         <th>طول جغرافیایی</th>
                         <th class="operate">عملیات</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr id="empty-message">
-                        <td colspan="3" class="empty-message">
+                        <td colspan="4" class="empty-message">
                             دیتایی در جدول موجود نمی باشد
                             <br>
                             <img src="./public/images/empty.gif" alt="empty table" />
                         </td>
                     </tr>
                 </tbody>
+                <tfoot id="delete-footer" hidden>
+                    <tr>
+                        <td colspan="4">
+                            <button id="delete-selected">حذف انتخاب شده</button>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
     </div>
